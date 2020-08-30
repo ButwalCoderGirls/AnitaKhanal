@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <title>Registration form</title>
+</head>
+<style>
+    body {
+        background-image: url("https://images.unsplash.com/photo-1479920252409-6e3d8e8d4866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+        background-size: cover;
+        background-position: center;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    .container {
+        border: 1px solid black;
+        height: 130vh;
+        width: 30%;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.192);
+        background-color:rgba(127, 255, 212, 0.178);
+    }
+
+     h1 {
+        color: red;
+        text-align: center;
+        font-size:40px;
+        font-weight: bold;
+
+    }
+   
+    
+
+    .form-group input {
+        width: 70%;
+    }
+    .btn{
+        margin-top:30px;
+        float:right;
+    }
+    .skill{
+        margin-top:15px;
+    }
+</style>
+
+<body>
+    <h1> Registration Form  </h1>
+    <div class="container">
+        <form>
+            <div class="form-wrapper">
+
+                <div class="form-group">
+                    <label for="usename"> Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email"> Email </label>
+                    <input type="email" class="form-control" placeholder="enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="contact"> Contact number</label>
+                    <input type="text" class="form-control" placeholder="enter you number">
+                </div>
+               
+                <label for="">select your college : </label> <br>
+                <input type="checkbox" name="bmc"> bmc
+                <input type="checkbox" name="Nepathye"> Nepathye
+                <input type="checkbox" name="Tinau"> Tinau
+                <br> 
+                <label for="skills" class="skill"> Skills :</label>
+                <select>
+                    <option selected> choose your skill</option>
+                    <option value="">Web development</option>
+                    <option value="1">Graphics design</option>
+                    <option value="2">Mobile application</option>
+                    <option value="3">Cyber security</option>
+                </select> <br>
+                
+                <label for="gender" class="skill"> Are you intrested ? </label><br>
+                <input type="radio" name="yes" value="yes">YES
+                <input type="radio" name="NO" value="no">NO <br>
+                <br>
+              
+              <label> Any Comments?</label><br>
+              <textarea name="comment" rows="5" cols="25"></textarea>
+             <br>
+             <div class="form-group">
+                <label for="deadline">Deadline of registration:</label>
+                <input type="date" class="form-control">
+            </div>
+              <button type="submit" class="btn btn-primary"> Submit </button>
+
+
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>
