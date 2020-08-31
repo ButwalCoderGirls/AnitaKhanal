@@ -17,6 +17,23 @@
         font-family: 'Poppins', sans-serif;
 
     }
+    .logo img{
+        height:50px;
+        width: 40px;
+        margin-left:20px;
+    }
+    .nav-item .nav-link{
+        color:white !important;
+        font-size:20px;
+        padding:15px;
+        margin:10px;
+        font-family: 'Poppins', sans-serif;
+    }
+   .navbar-brand{
+       margin-left:25px;
+       font-weight: bold;
+       font-family: 'Poppins', sans-serif;
+   }
 
     .container {
         border: 1px solid black;
@@ -49,6 +66,35 @@
 </style>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="logo">
+            <img src="bcgirlslogo.png">
+        </div>
+   <a class="navbar-brand" href="#" style="color:red" active >Home</a>
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item">
+         <a class="nav-link" href="#"> About Us <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="#"> Contact Us <span class="sr-only">(current)</span></a>
+         </li>
+       <li class="nav-item">
+         <a class="nav-link" href="registration.html">Registration form</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="tables.html" tabindex="-1" aria-disabled="true">Table</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="simpleblog.html" tabindex="-1" aria-disabled="true">Blog</a>
+         </li>
+     </ul>
+     <form class="form-inline my-2 my-lg-0">
+       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+     </form>
+   </div>
+ </nav>
     <h1> Registration Form  </h1>
     <div class="container">
         <form>
