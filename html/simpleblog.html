@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+ 
+ 
     <title> Today's problem </title>
 </head>
 <style>
@@ -13,15 +17,35 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: fixed;
-        height:100vh;
+        height:130vh;
         width:100%;
-        /* margin-top:-100px; */
+        margin:0;
 
     }
+    .navbar-light{
+        margin-top:-10px;
+    }
+    .logo img{
+        height:50px;
+        width: 40px;
+        margin-left:20px;
+    }
+    .nav-item .nav-link{
+        color:white !important;
+        font-size:20px;
+        padding:15px;
+        margin:10px;
+        font-family: 'Poppins', sans-serif;
+    }
+   .navbar-brand{
+       margin-left:25px;
+       font-weight: bold;
+       font-family: 'Poppins', sans-serif;
+   }
     .container .header{
         font-size:1.5rem;
-       margin-left:25%;
-        margin-top:-45px;
+       margin-left:10%;
+        /* margin-top:-10px; */
     }
     .card_wrapper{
         display:flex;    
@@ -29,8 +53,8 @@
     }
     .problem{
         background-color:rgba(0, 255, 255, 0.527);
-        height:70vh;
-        width:350px;
+        height:75vh;
+        width:450px;
     }
      .para1{
         font-size:1.rem;
@@ -39,8 +63,8 @@
     }
     .problem_soln{
         background-color:rgba(250, 235, 215, 0.829);
-        height:70vh;
-        width:350px;
+        height:75vh;
+        width:450px;
 
     }
     .para2{
@@ -51,6 +75,37 @@
 
 </style>
 <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="logo">
+            <img src="bcgirlslogo.png">
+        </div>
+   <a class="navbar-brand" href="website.html" style="color:red" active >Home</a>
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item">
+         <a class="nav-link" href="#"> About Us <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="#"> Contact Us <span class="sr-only">(current)</span></a>
+         </li>
+       <li class="nav-item">
+         <a class="nav-link" href="registration.html">Registration form</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="tables.html" tabindex="-1" aria-disabled="true">Table</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="simpleblog.html" tabindex="-1" aria-disabled="true">Blog</a>
+         </li>
+     </ul>
+     <form class="form-inline my-2 my-lg-0">
+       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+     </form>
+   </div>
+ </nav>
+
     <div class="container">
         <div class="header">
             <h2>  COVID-19 </h2>
@@ -63,7 +118,7 @@
             </div>
             <div class="problem_soln">
                 <h1> solution of covid-19 </h1>
-                <p class="para2"> staying far from people and using mask when we are going outside house and using sanitizer when we touch something  we  all time The UNESCO Cities Platform (UCP) composed of 8 UNESCO city Networks and Programmes from all its fields of expertise - education, culture, nature and social sciences, and communication and information, have a comprehensive and transversal approach to the Organization’s work in the urban context for the implementation of the 2030 Agenda for Sustainable Development., </p>
+                <p class="para2"> staying far from people and using mask when we are going outside house and using sanitizer when we touch something  we  all time The UNESCO Cities Platform (UCP) composed of 8 UNESCO city Networks and Programmes from all its fields of expertise - education, culture, nature and social sciences, and communication and information, have a comprehensive and transversal approach to the Organization’s work in the urban context for the implementation of the 2030 Agenda for Sustainable., </p>
 
             </div>
         </div>
