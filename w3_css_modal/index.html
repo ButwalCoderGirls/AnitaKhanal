@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title> w3 css modal</title>
+</head>
+<style>
+    body{
+        background-image:url('https://images.unsplash.com/photo-1599054923626-c2775143b01d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+        background-size:cover;
+        background-repeat: no-repeat;
+
+    }
+    h1{
+        font-size:40px;
+        color:red;
+
+    }
+</style>
+<body>
+    <div class="w3-container">
+        <h1> W3.Css Modal </h1>
+        <button onclick ="document.getElementById('login').style.display='block'" class="w3-button w3-blue w3-large"> Login </button>
+        <div class="w3-modal" id="login">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+                <div class="w3-center"> <br>
+                    <span onclick="document.getElementById('login').style.display='none'" class="w3-span w3-button w3-hover-red  w3-display-topright">&times;</span>
+                    <img src="https://images.unsplash.com/photo-1589095181425-c038b3871b6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="height:150px" class="w3-circle w3-margin-top" >
+
+                </div>
+                <form class="w3-container">
+                    <div class="w3-section">
+                        <label><b>Username</b></label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+                        <label><b>Password</b></label>
+                        <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+                        <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+                        <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+                      </div>
+                      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                        <button onclick="document.getElementById('login').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+                        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+                      </div>
+
+                </form>
+                </div>
+
+             </div>
+    </div>
+    
+</body>
+</html>
