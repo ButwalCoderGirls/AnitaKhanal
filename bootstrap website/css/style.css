@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:rgba(128, 128, 128, 0.486);
+}
+/* .................navbar................ */
+.logo img{
+    height:50px;
+    width: 40px;
+    margin-left:20px;
+}
+.nav-item .nav-link{
+    color:white !important;
+    font-size:20px;
+    padding:15px;
+    margin:10px;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-brand{
+   margin-left:25px;
+   font-weight: bold;
+   font-family: 'Poppins', sans-serif;
+}
+/* ..................slider..................... */
+.carousel-inner .carousel-item{
+    
+    overflow: hidden;
+}
+.img-slider{
+    height:80vh;
+    width:100%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    animation: slider 15s linear infinite;
+}
+@keyframes slider{
+    0%{
+      background-image:url("https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+
+    }
+    35%{
+        background-image:url("https://images.pexels.com/photos/3943949/pexels-photo-3943949.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    }
+    75%{
+        background-image: url("https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+
+    }
+}
+.img-slider .title{
+    text-align:center;
+    font-size:2.5rem;
+    font-weight: bold;
+   color:black;
+   padding:15%;
+   padding-bottom: 0;
+   letter-spacing: 2px;
+   text-shadow: 1px 1px 2px white;
+   
+}
+.img-slider .para{
+    text-align:center;
+    font-size:1.5rem;
+    font-weight: bold;
+   color:rgba(0, 0, 0, 0.609);
+  
+   letter-spacing: 2px;
+
+}
+/* ...............our team........................... */
+.seaction_team_header{
+    margin-top:30px;
+    text-align:center;
+}
+.seaction_team_header .title_small{
+    font-size:1rem;
+    font-weight: 600;
+
+}
+.seaction_team_header .title_big{
+    font-size:3rem;
+    color:rgba(0, 0, 0, 0.212);
+    position: relative;
+    font-weight: bold;
+}
+.seaction_team_header .title_front{
+    position: absolute;
+    top:8%;
+    left:40%;
+    font-weight: bold;
+    font-size:1.5rem;
+}
+.teams_team{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 24%;
+    position: relative;
+  
+}
+.teams_team .team_members{
+    background-color:white;
+    margin-bottom:20px;
+
+}
+.teams_team .team_members .team_image img{
+    position:relative;
+    height:300px;
+    width:200px;
+    
+}
+
+
+.team-member-details .team-member-name{
+    text-align:center;
+    font-weight: bold;
+    font-size:1.3rem;
+}
+.team-member-details .team-member-post{
+    text-align: center;
+    color:blue;
+}
+/* ....................contact..................... */
+.contact-section{
+    background-color:black;
+    height:60vh;
+
+}
+.section-header-wrapper .font-title{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    text-shadow: 1px 1px 2px black;
+    margin-top:20px;
+
+}
+ .mini-title{
+    color:white;
+    text-shadow: 1px 1px 2px black;
+
+}
+.contact-details li{
+    display:flex;
+   list-style:none;
+   margin: 15px;
+    text-align:center;
+}
+.contact-details .icon{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #8BC34A;
+    color:white;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 17px;
+    margin: 15px;
+
+}
+.contact-details .call{
+    color:white;
+    text-align: center;
+    display:flex;
+    margin-top:15px;
+}
+ a{
+    text-decoration:none;
+    color:white;
+}
+.contact-form{
+    background-color:white;
+    margin-top:50px;
+    height:65vh;
+    position: absolute;
+    padding:20px;
+    width: 100%;
+
+}
+.contact-form .contact{
+    text-align:center;
+    font-size:2.5rem;
+    font-weight: bold;
+}
+
+label{
+    margin-left:30px;
+    font-weight: bold;
+    margin-bottom:5px;
+}
+input{
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    border-bottom:1px solid black;
+    width:80%;
+    display:block;
+    margin-left:30px;
+    margin-bottom:15px;
+
+}
+.btn{
+    float:right;
+}
+/* ........................footer.......................... */
+.footer{
+    background-color:yellow;
+    height:10vh;
+    width: 100%;
+    
+
+}
+.footer .copyright{
+    margin-top:20px;
+    font-size:1.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.footer .followus{
+    margin-top:20px;
+    text-align:center;
+    
+}
+.followus i{
+    border:1px solid black;
+    border-radius:25px;
+    padding:10px;
+    margin:5px;
+}
